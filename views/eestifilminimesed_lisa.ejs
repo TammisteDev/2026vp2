@@ -6,7 +6,7 @@
 </head>
 <body>
 	<img src="../pic/veebiprogrammeerimine_2026_ID.png" alt="bänner">
-	<h1>Lisa Eesti filmiga seotud inimesi</h1>
+	<h1>Lisa eesti filmidest tuntud inimesi</h1>
 	<ul>
 		<li><a href="/">Tagasi avalehele</a></li>
 		<li><a href="/eestifilm">Tagasi Eesti filmi avalehele</a></li>
@@ -14,16 +14,16 @@
 	<hr>
 	<form method="POST">
 		<label for="firstNameInput">Filmiinimese eesnimi</label>
-		<input id="firstNameInput" name="firstNameInput" type="text" placeholder="Eesnimi" required>
+		<input id="firstNameInput" name="firstNameInput" type="text" placeholder="Eesnimi" required value="<%= firstName %>">
 		<br>
 		<label for="lastNameInput">Filmiinimese perekonnanimi</label>
-		<input id="lastNameInput" name="lastNameInput" type="text" placeholder="Perekonnanimi" required>
+		<input id="lastNameInput" name="lastNameInput" type="text" placeholder="Perekonnanimi" required value="<%= lastName %>">
 		<br>
 		<label for="bornInput">Filmiinimese sünnikuupäev</label>
-		<input id="bornInput" name="bornInput" type="date" required>
+		<input id="bornInput" name="bornInput" type="date" required value="<%= born %>">
 		<br>
 		<label for="deceasedInput">Filmiinimese surmakuupäev</label>
-		<input id="deceasedInput" name="deceasedInput" type="date">
+		<input id="deceasedInput" name="deceasedInput" type="date" value="<%= deceased %>">
 		<br>
 		<input id="personSubmit" name="personSubmit" type="submit" value="Salvesta">
 	</form>
